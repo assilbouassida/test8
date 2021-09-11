@@ -1,7 +1,7 @@
 export const moviedata = [
     
     {
-        id:Math.random(),
+        id:0,
       title: "The good doctor",
       posterUrl: "https://pbs.twimg.com/media/EbNkkiTXsAc2o3Y.jpg",
       rate: 4.2,
@@ -11,7 +11,7 @@ export const moviedata = [
     },
     
     {
-      id:Math.random(),
+      id:1,
       title: "Prison Break",
       posterUrl:
         "https://upload.wikimedia.org/wikipedia/en/5/54/Prison-break-season-4-dvd.jpg",
@@ -22,7 +22,7 @@ export const moviedata = [
     },
     
     {
-      id:Math.random(),
+      id:2,
       title: "Taboo",
       posterUrl:
         "https://images-na.ssl-images-amazon.com/images/I/81BbPS82fnL._AC_SL1500_.jpg",
@@ -33,7 +33,7 @@ export const moviedata = [
     },
    
     {
-      id:Math.random(),
+      id:3,
       title: "Dexter",
       posterUrl:
         "https://images-na.ssl-images-amazon.com/images/I/81JKXT1j0OL._SL1500_.jpg",
@@ -44,7 +44,7 @@ export const moviedata = [
     },
    
     {
-      id:Math.random(),
+      id:4,
       title: "Black List",
       posterUrl:
         "https://i2.wp.com/www.nerdsandbeyond.com/wp-content/uploads/2018/11/203AD589-D9BC-4842-BE7A-3FAC786F49EA.jpeg?fit=750%2C947&ssl=1",
@@ -55,7 +55,7 @@ export const moviedata = [
     },
     
     {
-      id:Math.random(),
+      id:5,
       title: "Vis A Vis",
       posterUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR1DBIEAneCfzyHa1-xYPa2oMCulo6mken_9Q&usqp=CAU",
@@ -65,7 +65,7 @@ export const moviedata = [
       trailer: "https://www.youtube.com/embed/ceNKwOvSVm8",
     },
     {
-      id:Math.random(),
+      id:6,
       title: "Cukur",
       posterUrl:
         "https://imgr.cineserie.com/2018/10/1129749.jpg?imgeng=/f_jpg/cmpr_0/w_744/h_1200/m_cropbox&ver=1",
@@ -76,7 +76,7 @@ export const moviedata = [
     },
    
     {
-      id:Math.random(),
+      id:7,
       title: "SHERLOCK",
       posterUrl:
         "https://images-na.ssl-images-amazon.com/images/I/51j90UOkX-L.jpg",

@@ -5,6 +5,9 @@ import Filter from "./Components/Filter/Filter";
 import MovieList from "./Components/MovieList/MovieList";
 import AddMovie from "./Components/AddMovie/AddMovie";
 import "bootstrap/dist/css/bootstrap.min.css";
+import {BrowserRouter,Route} from 'react-router-dom';
+import Mypage from "./Components/MovieCard/Mypage";
+
 
 function App() {
   const [movies, setMovies] = useState(moviedata);
@@ -31,13 +34,16 @@ function App() {
 
   return (
     <div className="App">
+      <BrowserRouter>
       <Filter handleChange={handleChange} title={title} ratingChanged={ratingChanged} rate={rate} />
-      <MovieList
+     <Route path="/" exact render = {() =>  <MovieList
         movies={movies.filter((movie) =>
           movie.title.toUpperCase().includes(title.toUpperCase().trim()) && movie.rate >=rate
         )}
-      />
+      />}/>
       <AddMovie handleAdd={handleAdd} />
+      <Route path="/data/:id" render = {(props) => <Mypage {...props} movies={movies}/>}/>
+      </BrowserRouter>
     </div>
   );
 }

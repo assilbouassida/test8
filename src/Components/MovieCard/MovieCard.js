@@ -1,8 +1,10 @@
 import React from "react";
 import { Button, Card } from "react-bootstrap";
 import ReactStars from "react-rating-stars-component";
+import { Link } from 'react-router-dom';
 
-const MovieCard = ({ movie }) => {
+
+const MovieCard = ({ movie ,history }) => {
   return (
     <Card style={{ width: "18rem" }} className="mb-3">
       <Card.Img height="350" variant="top" src={movie.posterUrl} />
@@ -18,7 +20,8 @@ const MovieCard = ({ movie }) => {
             edit={false}
           />
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        
+        <Link to={`/data/${movie.id}`}><Button variant="primary">Go somewhere</Button></Link>
       </Card.Body>
     </Card>
   );
